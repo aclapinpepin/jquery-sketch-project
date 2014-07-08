@@ -2,11 +2,13 @@ var numtiles = 0;
 
 var createDivSquare = function (number) {
     for (var i = 0; i < number; i++) {
-        $("#wrapper").append("<div class = 'row'></div><br/>");
-        for (var j = 0; j < number; j++) {
-            $(".row").append("<div class = 'block'>"+j+"</div>");
+        $("#wrapper").append("<p><div class = 'row'></div></p>");
         }
+	var rowstring = "";
+	for (var j = 0; j < number; j++) {
+		rowstring = rowstring + "<div class = 'block'></div>"
     }
+	$(".row").append(rowstring);
 };
 
 var remakeBoard = function (tiles) {
