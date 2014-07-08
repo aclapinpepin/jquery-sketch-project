@@ -13,7 +13,7 @@ var createDivSquare = function (number) {
 
 var remakeBoard = function (tiles) {
     $("#wrapper").empty();
-    var squarelength = (800 / tiles) + "px"
+    var squarelength = (960 / tiles) + "px"
     createDivSquare(tiles);
     $(".block").css("height", squarelength);
     $(".block").css("width", squarelength);
