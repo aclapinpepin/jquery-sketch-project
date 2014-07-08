@@ -17,9 +17,9 @@ var remakeBoard = function (tiles) {
     createDivSquare(tiles);
     $(".block").css("height", squarelength);
     $(".block").css("width", squarelength);
-	$(".block").hover(function () {      
+    $(".row").css("height", squarelength);
+    $(".block").hover(function () {      
         $(this).css("background-color", "grey");
-
     });
 };
 
